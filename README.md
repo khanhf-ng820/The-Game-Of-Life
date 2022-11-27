@@ -1,4 +1,4 @@
-# The-Game-Of-Life
+# The Game of Life
 ### John Conway's Game of Life in Pygame.
 
 To initialize the board, left click on a cell to change its state.

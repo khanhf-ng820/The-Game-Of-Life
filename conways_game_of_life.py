@@ -16,8 +16,6 @@ clock = pygame.time.Clock()
 size = 20
 cols, rows = width//size, height//size
 grid = [[0 for i in range(cols+2)] for j in range(rows+2)]
-# grid[6][4] = True
-# print(grid)
 done_init = False
 
 def notter(b):
@@ -33,7 +31,6 @@ while True:
 			exit()
 		if (not done_init) and event.type == pygame.MOUSEBUTTONDOWN:
 			x, y = pygame.mouse.get_pos()
-			# print((x, y))
 			cellx = math.ceil(x/size)
 			celly = math.ceil(y/size)
 			grid[celly][cellx] = notter(grid[celly][cellx])

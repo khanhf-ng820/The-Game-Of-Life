@@ -38,7 +38,7 @@ while True:
 			if event.key == pygame.K_RETURN:
 				done_init = True
 				if done_init:
-					print("done initializing")
+					print("Done initializing!")
 
 	# Processing next gen
 	nextgrid = [[0 for i in range(cols+2)] for j in range(rows+2)]

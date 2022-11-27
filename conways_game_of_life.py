@@ -44,7 +44,6 @@ while True:
 					print("done initializing")
 
 	# Processing next gen
-	# nextgrid = grid
 	nextgrid = [[0 for i in range(cols+2)] for j in range(rows+2)]
 	
 	if done_init:
@@ -61,12 +60,8 @@ while True:
 					grid[row+1][col+1],
 				]
 				alive_neighbors = sum(neighbors)
-				# if alive_neighbors < 2 or alive_neighbors > 3:
-				# 	nextgrid[row][col] = False
-				# elif (alive_neighbors == 2 or alive_neighbors == 3) and grid[row][col]:
-				# 	nextgrid[row][col] = True
-				# elif alive_neighbors == 3 and not grid[row][col]:
-				# 	nextgrid[row][col] = True
+				
+				# Count live neighbors
 				if grid[row][col] == 0 and alive_neighbors == 3:
 					nextgrid[row][col] = 1
 				elif grid[row][col] == 1 and (alive_neighbors < 2 or alive_neighbors > 3):
